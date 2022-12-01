@@ -2,8 +2,7 @@ import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 import cardList from './data'
-
-export default function Home() {
+export default function Home() {  
   return (
     <div className={styles.container}>
       <div className='w-full pb-20'>
@@ -12,7 +11,9 @@ export default function Home() {
 
       <main className='grid lg:grid-cols-3 gap-6 w-full h-full mx-auto  px-8'>
         
-       {cardList.map(card=>(
+       {
+       cardList.map(card=>(
+        
         <>
         <div className='shadow-lg w-72 h-80'>
           <Image src={card.img} alt='imagen' width={300} height={100} className='rounded-lg h-44'/>
@@ -43,6 +44,8 @@ export default function Home() {
           </span>
         </a>
       </footer>
-    </div>
+    </div> 
+
   )
+  
 }
