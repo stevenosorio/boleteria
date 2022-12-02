@@ -1,8 +1,14 @@
 import Image from 'next/image'
 import React from 'react'
 import cardList from '../domain/data'
- 
+import { useRouter } from 'next/router'
+
 const Card = ({ ...props }) => {
+  const router = useRouter()
+
+  function handlecard(){
+    router.push('/login')
+  }
   return (
  
         <div className='grid lg:grid-cols-3 gap-6 w-full h-full mx-auto  px-8'>
@@ -15,7 +21,7 @@ const Card = ({ ...props }) => {
            <p className='w-[200px] ml-2'>{card.text}</p>
            <h1 className='text-4xl font-semibold ml-2'>{card.date}</h1>
            <div className=''>
-           <button className="bg-blue-500 hover:bg-blue-400 text-white font-bold py-2 px-4 border-b-4 border-blue-700 hover:border-blue-500 rounded w-full">
+           <button onClick={handlecard} className="bg-blue-500 hover:bg-blue-400 text-white font-bold py-2 px-4 border-b-4 border-blue-700 hover:border-blue-500 rounded w-full">
            COMPRAR
          </button>
          </div>

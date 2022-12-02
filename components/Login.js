@@ -3,7 +3,7 @@ import loginrService from '../services/login';
 import { useRouter } from 'next/router'
 
 const Login = () => {
-    
+    const router = useRouter()
   
     const [formData, setFormData] = useState({
         usuario: "",
