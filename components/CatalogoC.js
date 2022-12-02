@@ -7,7 +7,7 @@ const CatalogoC = ({ ...props }) => {
   const router = useRouter()
 
   function handlecard(){
-    router.push('/seller')
+    alert('has comprado este evento')
   }
   return (
  
