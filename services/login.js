@@ -1,4 +1,4 @@
-import { users } from "../users-data";
+import {users} from '../domain/user_data'
 
 const login = async credentials => {
     console.log(window.localStorage.getItem("users"))
@@ -9,7 +9,8 @@ const login = async credentials => {
         let userStorage = JSON.parse(window.localStorage.getItem("users"));
         let userMap = {};
         userStorage.map( user => {
-            if(user.email === credentials.email && user.password === credentials.password){
+            if(user.usuario === credentials.usuario && user.Contraseña === credentials.contraseña){
+                console.log('login');
                 userMap = user;
             }
         })
