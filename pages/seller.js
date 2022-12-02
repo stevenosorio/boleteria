@@ -1,8 +1,32 @@
 
+import styles from '../styles/Home.module.css'
+import Crear from '../components/Crear'
+import Footer from '../components/Footer'
+import Header from '../components/header'
+export default function Home() {
+   return (
 
-export default function Home({img ,title,text,date}) {
-    return (
+      <div>
 
-       <h1>producto</h1>
-    )
-  }
+         <header>
+              <Header/>
+         </header>
+
+
+
+         <div className={styles.container}>
+         <Crear/>
+         </div>
+
+
+
+         <footer>
+            <Footer/>
+         </footer>
+      </div>
+ 
+ 
+ 
+   )
+ }
+ 

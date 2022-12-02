@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import React from 'react'
-import cardList from '../domain/data'
+import {data} from '../domain/data'
 import { useRouter } from 'next/router'
 
 const Card = ({ ...props }) => {
@@ -13,7 +13,7 @@ const Card = ({ ...props }) => {
  
         <div className='grid lg:grid-cols-3 gap-6 w-full h-full mx-auto  px-8'>
         
-        {cardList.map(card=>(
+        {data.map(card=>(
          <>
          <div className='shadow-lg w-72 h-80'>
            <Image src={card.img} alt='imagen' width={300} height={100} className='rounded-lg h-44'/>

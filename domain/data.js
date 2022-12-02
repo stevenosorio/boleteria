@@ -1,4 +1,4 @@
-export default [
+export const data = [
     {
         img: "/images/1.png",
         title: "BAD BUNNY - BARRANQUILLA",
