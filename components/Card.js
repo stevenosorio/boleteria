@@ -1,11 +1,11 @@
 import Image from 'next/image'
 import React from 'react'
-import cardList from '/pages/data'
-
-const Card = () => {
+import cardList from '../domain/data'
+ 
+const Card = ({ ...props }) => {
   return (
-    <div>
-            <main className='grid lg:grid-cols-3 gap-6 w-full h-full mx-auto  px-8'>
+ 
+        <div className='grid lg:grid-cols-3 gap-6 w-full h-full mx-auto  px-8'>
         
         {cardList.map(card=>(
          <>
@@ -24,8 +24,8 @@ const Card = () => {
         )) }
  
        
-       </main>
-    </div>
+       </div>
+ 
   )
 }
 

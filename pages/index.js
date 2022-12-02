@@ -11,15 +11,24 @@ import styles from '../styles/Home.module.css'
 export default function Home() {
   return (
 
-    
+
     <div className={styles.container}>
-      <Header/>
+      <header>
+        <Header />
+      </header>
+      <section>
+        <Banner />
+      </section>
 
-      <Banner/>
+      <main>
 
-      <Card/>
+        <Card />
+      </main>
 
-      <Footer/>
+      <footer>
+        <Footer />
+
+      </footer>
 
     </div>
   )

@@ -1,7 +1,11 @@
 import Link from 'next/link'
 import Footer from '../components/Footer'
 import Header from '../components/header'
-import Login from '../components/Login'
+import RegisterV from '../components/registerV'
+
+
+
+
 export default function Home() {  
   return ( 
     <div className= "bg-slate-300">
@@ -9,7 +13,7 @@ export default function Home() {
            <Header/>
         </header>
          <main>
-          <Login/> 
+          <RegisterV/> 
          </main>
 
        
