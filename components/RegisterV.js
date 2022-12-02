@@ -1,8 +1,10 @@
 import React, { useState } from "react"
 import registerService from '../services/register';
+import { useRouter } from 'next/router'
 
 
 const RegisterV = () => {
+    const router = useRouter()
     const [formData, setFormData] = useState({
         usuario: "",
         contraseña: "",
@@ -50,6 +52,7 @@ const RegisterV = () => {
 
                             })
                             if (user != null) {
+                                router.push('/login')
                             }
                         } catch (error) {
                             console.log('Error credentials')

@@ -1,6 +1,10 @@
 import React, { useState } from "react"
 import loginrService from '../services/login';
+import { useRouter } from 'next/router'
+
 const Login = () => {
+    
+  
     const [formData, setFormData] = useState({
         usuario: "",
         contraseña: "",
@@ -27,11 +31,19 @@ const Login = () => {
                 alert("contraseña invalido")
             } else {
                         try {
-                            const user = await loginrService({
+                            const login = await loginrService({
                                 usuario: usuario.value,
                                 contraseña: contraseña.value,
                             })
-                            if (user != null) {
+                            console.log(login);
+                            if(login==1){
+                                router.push('/catalogoc')
+                            }
+                            if(login==2){
+                                router.push('/catalogov')
+                            }
+                           
+                            if (login != 0) {
                             }
                         } catch (error) {
                             console.log('Error credentials')
