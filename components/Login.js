@@ -53,7 +53,7 @@ const Login = () => {
       <p className="max-w-xl   self-center text-xl" >Inicia sesión en tu Cuenta</p>
       <form  className="flex flex-col  "onSubmit={handleLogin}>
         <input className="pb-2 bg-slate-200 border-sky-500   my-1 rounded-lg shadow-lg shadow-slate-500" type="text" name="usuario" placeholder="usuario" id="usuario"/>
-        <input className="pb-2 bg-slate-200 border-sky-500   my-1 rounded-lg shadow-lg shadow-slate-500" type="text" name="contraseña" placeholder="contraseña" id="contraseña"/>
+        <input className="pb-2 bg-slate-200 border-sky-500   my-1 rounded-lg shadow-lg shadow-slate-500" type="password" name="contraseña" placeholder="contraseña" id="contraseña"/>
         <input className="bg-blue-400 py-4 rounded-full" type="submit" value="inicio de sesión" id="crear"/>
        </form>
       

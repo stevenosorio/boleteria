@@ -72,7 +72,7 @@ const Register = () => {
             <form className="flex flex-col  " onSubmit={handleLogin} >
                 <input className="pb-2 bg-slate-200 border-sky-500   my-1 rounded-lg shadow-lg shadow-slate-500" type="text" name="usuario" placeholder="usuario" id="usuario" onChange={handleInput} value={formData.name}
                 />
-                <input className="pb-2 bg-slate-200 border-sky-500   my-1 rounded-lg shadow-lg shadow-slate-500" type="text" name="contraseña" placeholder="contraseña" id="contraseña" onChange={handleInput} value={formData.contraseña} />
+                <input className="pb-2 bg-slate-200 border-sky-500   my-1 rounded-lg shadow-lg shadow-slate-500" type="password" name="contraseña" placeholder="contraseña" id="contraseña" onChange={handleInput} value={formData.contraseña} />
                 <input className="pb-2 bg-slate-200 border-sky-500   my-1 rounded-lg shadow-lg shadow-slate-500" type="text" name="apellido" placeholder="Apellido" id="apellido" onChange={handleInput} value={formData.apellido} />
                 <input className="pb-2 bg-slate-200 border-sky-500   my-1 rounded-lg shadow-lg shadow-slate-500" type="email" name="correo" placeholder="correo" id="correo" onChange={handleInput} value={formData.correo} />
                 <input className="pb-2 bg-slate-200 border-sky-500   my-1 rounded-lg shadow-lg shadow-slate-500" type="number" name="numero" placeholder="numero" id="numero" onChange={handleInput} value={formData.numero} />
