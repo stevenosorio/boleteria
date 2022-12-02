@@ -1,5 +1,7 @@
-export default [
-    {
+export const dat = {
+    eventos: [
+      {
+  
         img: "/images/1.png",
         title: "BAD BUNNY - BARRANQUILLA",
         text: "Puerta de Oro",
@@ -56,3 +58,4 @@ export default [
         date: "18 DIC 2022"
     },
 ]
+}

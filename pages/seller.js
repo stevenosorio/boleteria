@@ -1,8 +1,13 @@
+import Crear from '../components/Crear'
+import styles from '../styles/Home.module.css'
 
 
-export default function Home({img ,title,text,date}) {
-    return (
+export default function Home() {
+  return (
 
-       <h1>producto</h1>
-    )
-  }
+
+    <div className={styles.container}>
+        <Crear/>
+    </div>
+  )
+}
