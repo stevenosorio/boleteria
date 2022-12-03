@@ -1,7 +1,7 @@
 import {data} from '../domain/data'
 
 
-const geteventos = async credentials => {
+const geteventos=  async credentials => {
  
     console.log(window.localStorage.getItem("eventos"))
      

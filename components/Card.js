@@ -1,14 +1,15 @@
 import Image from 'next/image'
 import React from 'react'
 import {data} from '../domain/data'
-import { useRouter } from 'next/router'
+import { useRouter } from 'next/router' 
 
 const Card = ({ ...props }) => {
   const router = useRouter()
+ 
 
   function handlecard(){
     router.push('/login')
-  }
+  } 
   return (
  
         <div className='grid lg:grid-cols-3 gap-6 w-full h-full mx-auto  px-8'>
@@ -16,7 +17,7 @@ const Card = ({ ...props }) => {
         {data.map(card=>(
          <>
          <div className='shadow-lg w-72 h-80'>
-           <Image src={card.img} alt='imagen' width={300} height={100} className='rounded-lg h-44'/>
+ 
            <h3 className='text-lg font-bold ml-2 underline hover:underline-offset-4'>{card.title}</h3>
            <p className='w-[200px] ml-2'>{card.text}</p>
            <h1 className='text-4xl font-semibold ml-2'>{card.date}</h1>

@@ -6,6 +6,12 @@ export const data = [
         date: "2 NOV 2022"
     },
     {
+        img: "/images/1.png",
+        title: "BAD BUNNY - BARRANQUILLA",
+        text: "Puerta de Oro",
+        date: "2 NOV 2022"
+    },
+    {
         img: "/images/2.jpg",
         title: "ANUEL AA - BARRANQUILLA",
         text: "Estadio Romelio M",
